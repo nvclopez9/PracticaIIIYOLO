@@ -19,7 +19,7 @@ def main():
 
     # 2) Vamos a ver que tal predice...
     results = model.predict(
-        source="test/images",
+        source="images/val",
         conf=0.2,
         show=True,
         save = True
