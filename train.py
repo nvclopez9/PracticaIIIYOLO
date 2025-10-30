@@ -9,13 +9,13 @@ def main():
 
     modeloSinEntrenar = "yolo11n.yaml"
     modeloEntrenado = "yolo11n.pt"
-    numEpochs = 2 # En la docu se recomienda... empezar en 100!
+    numEpochs = 150 # En la docu se recomienda... empezar en 100!
 
     model = YOLO(modeloEntrenado)
 
 
     # 1) Uso las imagenes que defino en mi .yaml
-    model.train(data="dataCheetah.yaml", epochs=numEpochs, imgsz=640, batch=-1)
+    model.train(data="data.yaml", epochs=numEpochs, imgsz=640, batch=-1)
 
     # 2) Vamos a ver que tal predice...
     results = model.predict(

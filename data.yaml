@@ -1,7 +1,6 @@
 path: .
-train: train/images
-val: valid/images
-test: test/images
+train: images/train
+val: images/val
 
-nc: 2
-names: ['', '']
+nc: 1
+names: ['Farolas']
